@@ -63,6 +63,7 @@ RUN cd /tmp && \
     rm -rf /tmp/*
 
 COPY nvidia-driver /usr/local/bin
+COPY kernel.config /usr/src/
 
 WORKDIR /usr/src/nvidia-$DRIVER_VERSION
 
